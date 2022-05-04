@@ -36,7 +36,7 @@ const List = props => (
         ))
       ) : (
         <tr>
-          <td colSpan={3}>No testCase</td>
+          <td  >No testCase</td>
         </tr>
       )}
     </tbody>
