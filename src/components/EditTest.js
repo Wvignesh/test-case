@@ -33,6 +33,12 @@ const EditTest = props => {
           onChange={handleInputChange}
         /> <br></br> <br></br>
         <button className='btn btn-outline-dark'>Update List</button>
+        <button
+          className="btn  btn-outline-dark muted-button"
+          onClick={() => props.setEditing(false)}
+        >
+          Cancel
+        </button>
       </fieldset>
     </form>
   )

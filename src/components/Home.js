@@ -24,7 +24,7 @@ function Home() {
     
       const editRow = user => {
         setEditing(true)
-        setCurrentUser({ id: user.id, title: user.title, discription: user.discription })
+        setCurrentUser({ id: user.id, name: user.name, username: user.username })
       }
     
       const updateUser = (id, updatedUser) => {
@@ -58,7 +58,7 @@ function Home() {
           ) : (
             <div>
               <h2>Add TestCase</h2>
-              <AddTest addUser={addUser} dats={testData} />
+              <AddTest addUser={addUser}   />
             </div>
           )}
         </div>
